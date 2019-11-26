@@ -1,0 +1,71 @@
+<html>
+    
+
+    <head>
+
+
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/timeline.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+        <center><img src="assets/ZacEfron.jpg" alt="Zac Efron Image" width="200" height="300"></center>
+        <center><h1>Zac Efron Data Analysis (IMBd)</h1></center>
+        <center><h2>Kevin Elkin</h2></center>
+        <br>
+        <br>
+    </head>
+
+    <body>
+
+    <div id="container"></div>
+    <center><h4>Purpose of Project</h4></center>
+    <center><p>The purpose of this website is to analyze data from IMBd on Zac Efron and present the information and findings in a creative and informative way while using unique and uncommon graphs/charts that are fully interactive. We will use IMBd to gather our data and conuct our analysis on Zac Efron. IMBd is a popular choice for critics and audiences to rate and score various movies.</p></center>
+    <br>
+    <center><h4>Data Sources and Preprocessing</h4></center>
+    <center><p>As mentioned earlier, I chose to web scrape IMBd to obtain the data and information I needed. I gathered the following information: The name of the movie Zac Efron appeared in, the date the film was released, the genre(s) of the film, the director of the film, the IMBd rating, the total number of votes on IMBd, the number of critics who reviewed the film, and the number of audience members who reviewed the film. Movies/shows with less than 2000 views were skipped over as they mostly appeared to be commercials or T.V. appearances (such as a talk show). After web scrapping the data from IMDb I started to ask specific questions pertaining to what I wanted to learn about Zac Efron. I came up with the idea that I was specifically interested in Zac Efrons ratings given a specific genre of movie. For instance, does Zac Efron appear more in a certain genre of film than another? Additionally, I wanted to investigate what the average score was by genre with Zac Efron appearing in it. This question can be broadened by saying the following: "Does a certain genre obtain a higher score on IMBd with Zac Efron in it as compared to other genres"</p></center>
+    <br>
+    <center><h4>Brief Biography</h4></center>
+    <center><p>Zachary David Alexander Efron was born on October 18, 1987, in San Luis Obispo, California. At age 11, one of Zac's piano teachers recognized Efron's talents and persuaded him to pursue theater and acting at the Pacific Conservatory of the Performing Arts. Zac auditioned for a small part in the production of <i>Gypsy</i> which marked the beginning of his passion for acting. Soon, Efron was making regular trips to Los Angeles for auditions while attending Arroyo Grande High School. Efron's first major role landed him a spot in the hit television series <i>Fireflies</i> which begin his Hollywood acting carrier</p></center>
+    <br>
+    <center><h4>Timeline</h4></center>
+    <center><p>Before we analyze what movies and generes Zac Efron takes part in we must first understand the popular films he has taken part in through time. The timeline below showcases the major movie(s) Zac Efron was apart of from 2004 - 2017. The timeline shows the year and popular movies at the time as well as a short excerpt pulled directly from the source listed. I chose this source as I felt that it was an accurate representation of the big movies that Zac Efron has taken part and provided the timeline with an interesting biography that is sure to grab the readers attention. This text was web scrapped and then inputted into the timeline. </p></center>
+    <br>
+    <div id = "Timeline"></div>
+    
+
+    <center><h4>Bubble Chart</h4></center>
+    <center><p>Below is a packed bubble chart categorizing the various generes and movies Zac Efron has taken part in. Each large (or parent) bubble represents a different genre in film and the small bubbles inside represent a film that Zac Efron has taken part in. Scrolling over each film (or smaller bubble) reveals their IMDb score as well as the name of the film. Additionally, I chose to automatically show the titles of the movies with an IMDb score over 6.5. This was advantageous for the visualization as it allowed me to show which generes of Zac Efron's movies are the most popular as well as showcase the most popular films he's in of each category (Showing the most popular movies with a score > 6.5 is something that would be hard to accomplish with just a regular bar chart of the genres) </p></center>
+
+    <div id = "Bubblechart"></div>
+
+    <br>
+    <center><h4>Bubble chart Findings</h4></center>
+    <center><p>From the bubble chart above we can see that there exists at least one <i>'good'</i> movie (classified by having an IMDb score > 6.5) in each genre with Biography having 100% of the movies with a score above 6.5. Additionally, we can see that comedy films make up the biggest proportion of Zac Efron's films (accounting for 16 of his 38 total films) while the adventure genre accounts for the least of his films (only contains 1 film). Additionally, we can see that Zac Efron has been apart of 7 unique generes across his 38 movies that he has been in. We can notice how popular film generes such as horror, Romance, and Science Fiction are missing. Let us now examine the average IMDb score each genre has received for the movies Zac Efron has been in.</p></center>
+
+    <br>
+    <center><h4>Radar Chart</h4></center>
+    <center><p>Below is a Radar chart showing the average rating each genre received on IMDb for movies that Zac Efron has been in. Before we discuss the information obtained by the radar chart we must first understand our limitations of the data; Zac Efron has acted in 38 movies and some generes have a larger proportion of movies ass compared to others. For instance, comedy accounts for the largest sum of movies while adventure only has 1 Zac Efron movie in it. This means that generes containing only a few movies (or only 1) will likely be more dependent on the success or rating of a single film as compared a genre with numerous films (such as comedy). We can refer back to the bubble chart to see the size and distribution each genre has.</p></center>
+    <div id = "radar"></div>
+
+    <center><h4>Radar Chart Findings</h4></center>
+    <center><p>The average rating for a movie on IMDb is 6.38. The radar chart shows the following statistics in each section: Biography - 7.2, Animation - 7.0, Drama - 6.52, Comedy - 6.03, Crime - 6.6, Adventure - 9.0, Action - 6.57. We can see that the average score for each genre of movies that Zac Efron has been in is higher than the overall average rating on IMDb in every category except comedy. Additionally, we can see that of the 3 Biography films Zac Efron has done they have all scored relatively high. The radar chart also suggests that Efron is very balanced and well rounded meaning that between the generes hes acted in, the movies typically due fairly well (according to the average). As mentioned above, however, we must still take these readings while accounting for the limitations of the data.</p></center>
+    
+
+    
+      
+    </body>
+
+
+
+    <script src = 'main.js'></script>
+
+    
+
+    
+</html>
